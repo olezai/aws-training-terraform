@@ -13,4 +13,3 @@ override.tf.json
 *_override.tf.json
 terraform.tfvars.json
 notes/
-tfplans/

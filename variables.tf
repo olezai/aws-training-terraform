@@ -5,10 +5,10 @@ variable "az_num" {
 
 variable "namespace" {
   type    = string
-  default = "terraform-workshop"
+  default = "terraform-workshop-oz"
 }
 
 variable "vpc_cidr_block" {
   type    = string
-  default = "10.0.0.0/16"
+  default = "10.100.0.0/16"
 }

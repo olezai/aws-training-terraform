@@ -3,6 +3,7 @@
 *.tfstate.*
 *.tfvars
 .terraform/
+.terraform.*
 .crash/
 *.backup
 *.log

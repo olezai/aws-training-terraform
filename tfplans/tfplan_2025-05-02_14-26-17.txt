@@ -1,0 +1,43 @@
+
+Error: Invalid function argument
+
+  on main.tf line 451, in resource "aws_instance" "staging_app":
+ 451:   user_data = templatefile("${path.module}/userdata/staging-efs.sh", {
+ 452:     region        = data.aws_region.current.name,
+ 453:     efs_id        = aws_efs_file_system.mission_app.id
+ 454:     db_name       = aws_db_instance.wp_mysql.db_name
+ 455:     db_username   = aws_db_instance.wp_mysql.username
+ 456:     db_password   = aws_db_instance.wp_mysql.password
+ 457:     db_host       = aws_db_instance.wp_mysql.address
+ 458:     DOMAIN_NAME   = aws_cloudfront_distribution.mission_app.domain_name
+ 459:     demo_username = local.demo.admin.username
+ 460:     demo_password = local.demo.admin.password
+ 461:     demo_email    = local.demo.admin.email
+ 462:   })
+    ├────────────────
+    │ while calling templatefile(path, vars)
+    │ path.module is "."
+
+Invalid value for "path" parameter: no file exists at
+"./userdata/staging-efs.sh"; this function works only with files that are
+distributed as part of the configuration source code, so if this file will be
+created by a resource in this configuration you must instead obtain this
+result from an attribute of that resource.
+
+Error: Invalid function argument
+
+  on main.tf line 559, in resource "aws_launch_template" "mission_app_lc":
+ 559:   user_data = base64encode(templatefile("${path.module}/userdata/staging-wordpress.sh", {
+ 560:     region    = data.aws_region.current.name,
+ 561:     efs_id    = aws_efs_file_system.mission_app.id,
+ 562:     s3_bucket = aws_s3_bucket.mission_app.bucket
+ 563:   }))
+    ├────────────────
+    │ while calling templatefile(path, vars)
+    │ path.module is "."
+
+Invalid value for "path" parameter: no file exists at
+"./userdata/staging-wordpress.sh"; this function works only with files that
+are distributed as part of the configuration source code, so if this file
+will be created by a resource in this configuration you must instead obtain
+this result from an attribute of that resource.

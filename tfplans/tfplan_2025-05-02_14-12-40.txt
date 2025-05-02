@@ -1,0 +1,56 @@
+data.aws_availability_zones.available: Reading...
+data.aws_iam_policy.database: Reading...
+data.aws_iam_policy.ssm_managed: Reading...
+data.aws_ami.linux: Reading...
+data.aws_iam_policy_document.assume_role: Reading...
+data.aws_iam_policy.administrator: Reading...
+data.aws_iam_policy.s3_ReadOnly: Reading...
+data.aws_region.current: Reading...
+data.aws_region.current: Read complete after 0s [id=us-east-1]
+data.aws_iam_policy_document.assume_role: Read complete after 0s [id=2851119427]
+aws_iam_role.app: Refreshing state... [id=app]
+aws_iam_role.web_hosting: Refreshing state... [id=web_hosting]
+data.aws_availability_zones.available: Read complete after 1s [id=us-east-1]
+aws_vpc.default: Refreshing state... [id=vpc-0076d703da77c204c]
+aws_iam_instance_profile.app: Refreshing state... [id=app-profile]
+aws_iam_instance_profile.web_hosting: Refreshing state... [id=web-hosting-profile]
+aws_internet_gateway.default: Refreshing state... [id=igw-07466c26193e50bae]
+aws_security_group.app: Refreshing state... [id=sg-0968256e9566d846b]
+aws_subnet.private_ingress["0"]: Refreshing state... [id=subnet-01cd79b680c4766dc]
+aws_security_group.any: Refreshing state... [id=sg-01b1783026e006209]
+aws_subnet.private_ingress["1"]: Refreshing state... [id=subnet-09d8e2dc13e34077c]
+aws_subnet.private["1"]: Refreshing state... [id=subnet-08b8323f7875c2bc6]
+aws_subnet.public["0"]: Refreshing state... [id=subnet-00f02e84bd8491fee]
+aws_subnet.public["1"]: Refreshing state... [id=subnet-023520e4090386e79]
+aws_subnet.private["0"]: Refreshing state... [id=subnet-0ce75f883d03c7bdc]
+aws_vpc_endpoint.gateway["s3"]: Refreshing state... [id=vpce-07abe2f9ee61ad6de]
+aws_route_table.public: Refreshing state... [id=rtb-0cc148a79040db19e]
+aws_vpc_endpoint.interface["ec2messages"]: Refreshing state... [id=vpce-0c7bb8201339dddc4]
+aws_vpc_endpoint.interface["ssmmessages"]: Refreshing state... [id=vpce-0a6593a8e599c6474]
+aws_vpc_endpoint.interface["ssm"]: Refreshing state... [id=vpce-0d1768bd256ed0d29]
+aws_vpc_endpoint.interface["secretsmanager"]: Refreshing state... [id=vpce-0c7dd8d4f1f97bd79]
+data.aws_iam_policy.s3_ReadOnly: Read complete after 4s [id=arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess]
+aws_eip.nat_gateway[0]: Refreshing state... [id=eipalloc-0c5ef291bd755efd0]
+data.aws_iam_policy.database: Read complete after 4s [id=arn:aws:iam::aws:policy/AmazonRDSDataFullAccess]
+aws_eip.nat_gateway[1]: Refreshing state... [id=eipalloc-0de7f5273abfd4049]
+data.aws_iam_policy.ssm_managed: Read complete after 4s [id=arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore]
+aws_security_group.db: Refreshing state... [id=sg-066e058cdfd01edff]
+data.aws_iam_policy.administrator: Read complete after 4s [id=arn:aws:iam::aws:policy/AdministratorAccess]
+aws_security_group.nfs: Refreshing state... [id=sg-06d0fa4af3171c38b]
+aws_main_route_table_association.default: Refreshing state... [id=rtbassoc-0235d7be0dfd31874]
+aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0e899585e70904713]
+aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-06306a3ce6af1e3a8]
+aws_iam_role_policy_attachments_exclusive.web_hosting: Refreshing state...
+aws_iam_role_policy_attachments_exclusive.app: Refreshing state...
+aws_nat_gateway.default[0]: Refreshing state... [id=nat-05f3546b145f375fb]
+aws_nat_gateway.default[1]: Refreshing state... [id=nat-0826d25cd3a99393a]
+aws_route_table.private_ingress[1]: Refreshing state... [id=rtb-077e125319044820f]
+aws_route_table.private_ingress[0]: Refreshing state... [id=rtb-03b478edf9259dd8a]
+aws_route_table_association.private_ingress[0]: Refreshing state... [id=rtbassoc-0ebb833fb7ade64d6]
+aws_route_table_association.private_ingress[1]: Refreshing state... [id=rtbassoc-055f54a15caf86fa8]
+data.aws_ami.linux: Read complete after 11s [id=ami-0f88e80871fd81e91]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

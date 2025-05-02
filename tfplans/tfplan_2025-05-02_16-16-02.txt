@@ -1,0 +1,12 @@
+random_password.default: Refreshing state... [id=none]
+tls_private_key.mission_app: Refreshing state... [id=e98f1af0cd2cbdc59e26d4fca45f57682c69728d]
+
+Planning failed. Terraform encountered an error while generating this plan.
+
+
+Error: Retrieving AWS account details: validating provider credentials: retrieving caller identity from STS: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: 088fb75f-1642-4ba8-96d3-2e32df5c66ac, api error ExpiredToken: The security token included in the request is expired
+
+  with provider["registry.terraform.io/hashicorp/aws"],
+  on providers.tf line 10, in provider "aws":
+  10: provider "aws" {
+
